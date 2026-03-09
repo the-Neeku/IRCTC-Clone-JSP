@@ -1,0 +1,44 @@
+<div class="row mt-2">
+    <div class="col-sm-1 ps-3">
+        <img src="IMAGES/secondry-logo.png" alt="logo">
+    </div>
+    <div class="col-sm-10">
+        <%
+            String currentPage = request.getServletPath().substring(request.getServletPath().lastIndexOf('/') + 1);
+        %>
+            <div class="row">
+                    <ul>
+                        <li ><a href="login.jsp" class="<%= currentPage.equals("login.jsp") ? "navactive" : "" %>">LOGIN</a></li>
+                        <li><a href="registration.jsp" class="<%= currentPage.equals("registration.jsp") ? "navactive" : "" %>">REGISTER</a></li>
+                        <li><a href="login.jsp">AGENT LOGIN</a></li>
+                        <li><a href="contact.jsp" class="<%= currentPage.equals("contact.jsp") ? "navactive" : "" %>">CONTACT US</a></li>
+                        <li><a href="https://equery.irctc.co.in/irctc_equery/">HELP & SUPPORT</a></li>
+                        <li><a href="https://www.amazon.in/deals?linkCode=ll2&tag=irctcdev07-21&linkId=6e8e3d8f31513cf92e862073d65fefae&language=en_IN&ref_=as_li_ss_tl&_encoding=UTF8&tag=irctcdev07-21&linkCode=ur2&linkId=41c3b8fb1ad95d37bf6d1ce4f06d8dc1&camp=3638&creative=24630"><b style="color: red;">DAILY DEALS</b></a></li>
+                        <li><a href="https://www.irctc.co.in/nget/enquiry/alerts">ALERTS</a></li>
+                        <li><a tabindex="0" aria-label="decrease  font size" href="#">A<sup>-</sup></a></li>
+                        <li><a tabindex="0" aria-label="default font size" href="#">A</a></li>
+                        <li><a tabindex="0" aria-label="increase font size" href="#">A<sup>+</sup></a></li>
+                    </ul>
+                </div>
+            <div class="row">
+                    <ul>
+                        <li><a href="index.jsp" class="<%= currentPage.equals("index.jsp") ? "navactive" : "" %>">HOME</a></li>
+                        <li><a href="files/irctc-ipay.pdf'">IRCTC EXCLUSIVE</a>
+                        </li>
+                        <li><a href="#" style="color: orangered;">TRAINS</a></li>
+                        <li><a href="https://contents.irctc.co.in/en/AboutLoyalty.html">LOYALTY</a></li>
+                        <li><a href="files/irctc-wallet.pdf">IRCTC eWallet</a></li>
+                        <li><a href="https://www.bus.irctc.co.in/home">BUSES</a></li>
+                        <li><a href="https://www.air.irctc.co.in/">FLIGHTS</a></li>
+                        <li><a href="https://www.hotels.irctc.co.in/hotels">HOTELS</a></li>
+                        <li><a href="#">HOLIDAYS</a></li>
+                        <li><a href="https://www.ecatering.irctc.co.in/">MEALS</a></li>
+                        <li><a href="https://raildrishti.indianrailways.gov.in/raildrishti/raildrishtiv3/">PROMOTIONS</a></li>
+                        <li><a href="https://corover.ai/irctc/">MORE</a></li>
+                    </ul>
+                </div>
+    </div>
+    <div class="col-sm-1 pe-3">
+        <img src="IMAGES/logo.png" alt="logo" style="float: right;">
+    </div>
+ </div>
